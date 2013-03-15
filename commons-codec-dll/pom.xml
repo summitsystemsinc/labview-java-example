@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>labview-java-example</artifactId>
+        <groupId>com.summit.examples</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>com.summit.examples</groupId>
+    <artifactId>commons-codec-dll</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>dll</packaging>
+    <name>commons-codec-dll</name>
+    <dependencies>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.7</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <!-- set this to customise the dll name. -->
+        <finalName>Apache.Commons.Codec</finalName>
+        <plugins>
+            <plugin>
+                <groupId>com.samskivert</groupId>
+                <artifactId>ikvm-maven-plugin</artifactId>
+                <!-- this lets Maven know that we define 'packaging: dll' -->
+                <extensions>true</extensions>
+                <configuration>
+                    
+                    <ikvmArgs>
+                        
+                    </ikvmArgs>
+                    <!-- these are additional referenced DLLs (beyond mscorlib, System and System.Core) -->
+                    <dlls>
+                        <!--
+                        <dll>System.Data.dll</dll>
+                        <dll>OpenTK.dll</dll>
+                        <dll>monotouch.dll</dll>
+                        <dll>Mono.Data.Sqlite.dll</dll>
+                        -->
+                    </dlls>
+                    <copyDlls />
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>ikvm</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
