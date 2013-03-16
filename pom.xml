@@ -47,5 +47,6 @@
     </build>
     <modules>
         <module>commons-codec-dll</module>
-    </modules>
+    <module>SimpleQrExample</module>
+  </modules>
 </project>
