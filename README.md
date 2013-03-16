@@ -7,5 +7,7 @@ A full write up on how to accomplish this can be found at <http://www.summitsyst
 
 NOTES:
 - Project is built with Maven 3 from http://maven.apache.org/
-- Mono must be on your path to build this in Maven.  In the snapshot version of the IKVM plugin this is not the case, but for now make sure you can execute "mono" directly.
+- The current version of the IKVM-maven-plugin explicitly adds System.Core.dll, 
+  which does not exist in my .NET 2.0 framework, so I have to compile using mono, 
+  which works great. Or this can be compiled using MS .NET 4
 - Documentation for the IKVM-maven-plugin is at <http://github.com/samskivert/ikvm-maven-plugin>
