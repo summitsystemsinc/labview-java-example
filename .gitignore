@@ -1,2 +1,6 @@
 /commons-codec-dll/target/
 /target/
+/SimpleQrExample/target/
+/SimpleQrExample-DLL/target/
+
+*.dll
