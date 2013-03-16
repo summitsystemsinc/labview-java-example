@@ -13,6 +13,9 @@
             <url>ftp://ftp.summitsystemsinc.com/projects/${project.artifactId}/${project.version}</url>
         </site>
     </distributionManagement>
+    <properties>
+        <commons.codec.version>1.7</commons.codec.version>
+    </properties>
     <contributors>
         <contributor>
             <name>Justin Smith</name>
@@ -22,6 +25,31 @@
         </contributor>
     </contributors>
     <inceptionYear>2013</inceptionYear>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons.codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>javase</artifactId>
+                <version>2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <pluginManagement>
             <plugins>
@@ -47,6 +75,7 @@
     </build>
     <modules>
         <module>commons-codec-dll</module>
-    <module>SimpleQrExample</module>
+        <module>SimpleQrExample</module>
+    <module>SimpleQrExample-DLL</module>
   </modules>
 </project>

@@ -6,20 +6,35 @@
         <groupId>com.summit.examples</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.summit.examples</groupId>
-    <artifactId>commons-codec-dll</artifactId>
+    <groupId>com.summit</groupId>
+    <artifactId>SimpleQrExampleDLL</artifactId>
     <packaging>dll</packaging>
-    <name>commons-codec-dll</name>
+    <name>SimpleQrExample-DLL</name>
     <dependencies>
         <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
+            <groupId>com.summit</groupId>
+            <artifactId>SimpleQrExample</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
     <build>
         <!-- set this to customise the dll name. -->
-        <finalName>Apache.Commons.Codec</finalName>
+        <finalName>Summit.QR.Example</finalName>
         <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>parse-version</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>com.samskivert</groupId>
                 <artifactId>ikvm-maven-plugin</artifactId>
@@ -28,11 +43,11 @@
                 <configuration>
                     
                     <ikvmArgs>
-                        <ikvmArg>-version:${commons.codec.version}</ikvmArg>
+                        <ikvmArg>-version:${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</ikvmArg>
                     </ikvmArgs>
                     <!-- these are additional referenced DLLs (beyond mscorlib, System and System.Core) -->
                     <dlls>
-                        
+                        <dll>System.Drawing.dll</dll>
                     </dlls>
                     <copyDlls />
                 </configuration>
