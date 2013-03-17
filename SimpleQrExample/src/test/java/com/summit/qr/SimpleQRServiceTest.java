@@ -55,7 +55,7 @@ public class SimpleQRServiceTest {
         int height = 640;
         
         String expResult = testString;
-        String filePath = simpleQRService.encodeStringToQRFile(stringToEncode, width, height);
+        String filePath = simpleQRService.encodeStringToQRFile(stringToEncode, width, height, true, "png");
         
         String result = simpleQRService.decodeQRFileToString(filePath);
         
