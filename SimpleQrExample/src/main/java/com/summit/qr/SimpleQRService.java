@@ -29,16 +29,18 @@ import javax.imageio.ImageIO;
  */
 public class SimpleQRService {
 
+    Logger logger = Logger.getLogger(SimpleQRService.class.getName());
+    
     public String encodeStringToQRFile(String stringToEncode, int width, int height, boolean deleteFileOnExit, String format) throws SimpleQRException {
         QRCodeWriter writer = new QRCodeWriter();
         BitMatrix bitMatrix;
-
+        
         try {
             File tempFile = File.createTempFile("qrcode", "." + format);
             if (deleteFileOnExit) {
                 tempFile.deleteOnExit();
             }
-            Logger.getLogger(SimpleQRService.class.getName()).log(Level.FINER, "Encoding to file: {0}", tempFile.getAbsolutePath());
+            logger.log(Level.FINER, "Encoding to file: {0}", tempFile.getAbsolutePath());
             bitMatrix = writer.encode(stringToEncode, BarcodeFormat.QR_CODE, width, height);
             MatrixToImageWriter.writeToFile(bitMatrix, format, tempFile);
             return tempFile.getAbsolutePath();
