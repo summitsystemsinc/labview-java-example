@@ -29,7 +29,7 @@ import javax.imageio.ImageIO;
  */
 public class SimpleQRService {
 
-    Logger logger = Logger.getLogger(SimpleQRService.class.getName());
+    static final Logger logger = Logger.getLogger(SimpleQRService.class.getName());
     
     public String encodeStringToQRFile(String stringToEncode, int width, int height, boolean deleteFileOnExit, String format) throws SimpleQRException {
         QRCodeWriter writer = new QRCodeWriter();
