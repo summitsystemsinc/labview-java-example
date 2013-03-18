@@ -7,6 +7,11 @@
     <packaging>pom</packaging>
     <name>LabView-Java Parent-${project.version}</name>
     <url>http://www.summitsystemsinc.com/projects/${project.artifactId}/${project.version}</url>
+    <scm>
+        <developerConnection>scm:git:git@github.com:summitsystemsinc/labview-java-example.git</developerConnection>
+        <connection>scm:git:git@github.com:summitsystemsinc/labview-java-example.git</connection>
+        <url>scm:git:git@github.com:summitsystemsinc/labview-java-example.git</url>
+    </scm>
     <distributionManagement>
         <site>
             <id>summitsystemsinc.com</id>
@@ -76,6 +81,6 @@
     <modules>
         <module>commons-codec-dll</module>
         <module>SimpleQrExample</module>
-    <module>SimpleQrExample-DLL</module>
-  </modules>
+        <module>SimpleQrExample-DLL</module>
+    </modules>
 </project>
