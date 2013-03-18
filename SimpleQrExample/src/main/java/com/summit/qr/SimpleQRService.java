@@ -30,6 +30,7 @@ import javax.imageio.ImageIO;
 public class SimpleQRService {
 
     static final Logger logger = Logger.getLogger(SimpleQRService.class.getName());
+    public static final String DEFAULT_IMAGE_FORMAT = "png";
     
     public String encodeStringToQRFile(String stringToEncode, int width, int height, boolean deleteFileOnExit, String format) throws SimpleQRException {
         QRCodeWriter writer = new QRCodeWriter();
@@ -51,7 +52,7 @@ public class SimpleQRService {
         }
     }
     public String encodeStringToQRFile(String stringToEncode, int width, int height, boolean deleteFileOnExit) throws SimpleQRException {
-        return encodeStringToQRFile(stringToEncode, width, height, deleteFileOnExit, "png");
+        return encodeStringToQRFile(stringToEncode, width, height, deleteFileOnExit, DEFAULT_IMAGE_FORMAT);
     }
 
     public String encodeStringToQRFile(String stringToEncode, int width, int height) throws SimpleQRException {
