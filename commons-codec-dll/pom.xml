@@ -4,10 +4,9 @@
     <parent>
         <artifactId>labview-java-example</artifactId>
         <groupId>com.summit.examples</groupId>
-        <version>1.1-SNAPSHOT</version>
+        <version>1.0.2-SNAPSHOT</version>
     </parent>
     <artifactId>commons-codec-dll</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
     <packaging>dll</packaging>
     <name>commons-codec-dll</name>
     <dependencies>
