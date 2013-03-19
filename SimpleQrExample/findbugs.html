@@ -21,20 +21,24 @@
             </head>
         <body class="topBarEnabled">
           
-                        
+                
                     
                 
 
     <div id="topbar" class="navbar navbar-fixed-top ">
       <div class="navbar-inner">
-                                  <div class="container"><div class="nav-collapse">
-            
+                <div class="container-fluid">
+        <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
                 
                                 <ul class="nav">
                             </ul>
           
           
-                                                              
+          
                    
                       </div>
           
@@ -42,7 +46,7 @@
       </div>
     </div>
     
-        <div class="container">
+        <div class="container-fluid">
           <div id="banner">
         <div class="pull-left">
                                 <div id="bannerLeft">
@@ -76,18 +80,42 @@
                             </ul>
       </div>
 
-      
+            
+      <div class="row-fluid">
+        <div id="leftColumn" class="span3">
+          <div class="well sidebar-nav">
                 
-        <div id="bodyColumn" >
+                    
+                <ul class="nav nav-list">
+  </ul>
+                
+                    
+                
+          <hr class="divider" />
+
+           <div id="poweredBy">
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                             <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+        <img class="builtBy" alt="Built by Maven" src="./images/logos/maven-feather.png" />
+      </a>
+                  </div>
+          </div>
+        </div>
+        
+                
+        <div id="bodyColumn"  class="span9" >
                                   
             <div class="section"><h2>FindBugs Bug Detector Report<a name="FindBugs_Bug_Detector_Report"></a></h2><p>The following document contains the results of <a class="externalLink" href="http://findbugs.sourceforge.net">FindBugs Report</a></p><p>FindBugs Version is <i>2.0.1</i></p><p>Threshold is <i>medium</i></p><p>Effort is <i>min</i></p></div><div class="section"><h2>Summary<a name="Summary"></a></h2><table border="0" class="table table-striped"><tr class="a"><th>Classes</th><th>Bugs</th><th>Errors</th><th>Missing Classes</th></tr><tr class="b"><td>2</td><td>0</td><td>0</td><td>0</td></tr></table></div><div class="section"><h2>Files<a name="Files"></a></h2><table border="0" class="table table-striped"><tr class="a"><th>Class</th><th>Bugs</th></tr></table></div>
                   </div>
+            </div>
           </div>
 
     <hr/>
 
     <footer>
-            <div class="container">
+            <div class="container-fluid">
               <div class="row span12">Copyright &copy;                    2013
                         <a href="http://www.summitsystemsinc.com">Summit Management Systems, Inc</a>.
             All Rights Reserved.      
@@ -96,11 +124,6 @@
             </div>
 
         
-                <p id="poweredBy" class="pull-right">
-                          <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
-        <img class="builtBy" alt="Built by Maven" src="./images/logos/maven-feather.png" />
-      </a>
-              </p>
         
                 </div>
     </footer>
