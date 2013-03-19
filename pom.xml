@@ -188,89 +188,12 @@
                             <report>project-team</report>
                             <report>distribution-management</report>
                             <report>dependency-management</report>
+                            <report>dependency-info</report>
+                            <report>dependency-convergence</report>
                             <report>plugin-management</report>
                             <report>plugins</report>
                             <report>license</report>
                         </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9</version>
-            </plugin>
-            <!--
-                Generates source cross-reference reports.  These are similar to
-                Javadoc, except the HTML includes hyperlinks on the classes and
-                method headers to view the source code.
-            -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.3</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>jxr</report>
-                            <report>test-jxr</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-                <configuration>
-                    <aggregate>true</aggregate>
-                </configuration>
-            </plugin>
-            <!--
-                PMD is a code quality tool.  The PMD report is a general code
-                quality report, while the CPD report identifies "copy-and-paste"
-                code blocks.
-            -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>2.7.1</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>pmd</report>
-                            <report>cpd</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-                <configuration>
-                    <aggregate>true</aggregate>
-                    <targetJdk>${jdk.version}</targetJdk>
-                </configuration>
-            </plugin>
-            <!--
-                Findbugs is a code quality tool.
-            -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
-                <version>2.5.2</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>findbugs</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>${cobertura.version}</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>cobertura</report>
-                        </reports>
-                        <configuration>
-                            <aggregate>true</aggregate>
-                        </configuration>
                     </reportSet>
                 </reportSets>
             </plugin>
