@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.summit.examples</groupId>
         <artifactId>labview-java-example</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4-SNAPSHOT</version>
     </parent>
     <artifactId>SimpleQrExample</artifactId>
     <name>SimpleQrExample</name>
