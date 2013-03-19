@@ -60,6 +60,15 @@
             <timezone>-6</timezone>
         </developer>
     </developers>
+    <contributors>
+        <contributor>
+            <name>Steven Swor</name>
+            <url>https://github.com/sworisbreathing/</url>
+            <roles>
+                <role>Site Contributions</role>
+            </roles>
+        </contributor>
+    </contributors>
     <inceptionYear>2013</inceptionYear>
     <dependencyManagement>
         <dependencies>
