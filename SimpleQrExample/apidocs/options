@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/target/classes;C:/Users/justin/.m2/repository/com/google/zxing/core/2.1/core-2.1.jar;C:/Users/justin/.m2/repository/com/google/zxing/javase/2.1/javase-2.1.jar;C:/Users/justin/.m2/repository/commons-codec/commons-codec/1.7/commons-codec-1.7.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2013 <a href="http://www.summitsystemsinc.com">Summit Management Systems, Inc</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'SimpleQrExample 1.1-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/6/docs/api' 'C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'SimpleQrExample 1.1-SNAPSHOT API'
