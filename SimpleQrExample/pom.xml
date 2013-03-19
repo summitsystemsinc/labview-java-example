@@ -6,7 +6,6 @@
         <artifactId>labview-java-example</artifactId>
         <version>1.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.summit</groupId>
     <artifactId>SimpleQrExample</artifactId>
     <name>SimpleQrExample</name>
     <url>http://maven.apache.org</url>
