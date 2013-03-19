@@ -4,14 +4,14 @@
     <parent>
         <artifactId>labview-java-example</artifactId>
         <groupId>com.summit.examples</groupId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1</version>
     </parent>
     <artifactId>SimpleQrExampleDLL</artifactId>
     <packaging>dll</packaging>
     <name>SimpleQrExample-DLL</name>
     <dependencies>
         <dependency>
-            <groupId>com.summit</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>SimpleQrExample</artifactId>
             <version>${project.version}</version>
         </dependency>
