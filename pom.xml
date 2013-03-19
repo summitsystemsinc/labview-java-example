@@ -9,7 +9,7 @@
     <url>http://summitsystemsinc.github.com/labview-java-example</url>
     <scm>
         <developerConnection>scm:git:git@github.com:summitsystemsinc/labview-java-example.git</developerConnection>
-        <connection>scm:git:git@github.com:summitsystemsinc/labview-java-example.git</connection>
+        <connection>scm:git:https://github.com/summitsystemsinc/labview-java-example.git</connection>
         <url>scm:git:git@github.com:summitsystemsinc/labview-java-example.git</url>
         <tag>HEAD</tag>
     </scm>
@@ -38,14 +38,28 @@
         <commons.codec.version>1.7</commons.codec.version>
         <github.global.server>github</github.global.server>
     </properties>
-    <contributors>
-        <contributor>
+    <organization>
+        <name>Summit Management Systems, Inc</name>
+        <url>http://www.summitsystemsinc.com</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>justin.smith</id>
             <name>Justin Smith</name>
             <organization>Summit Management Systems, Inc.</organization>
             <organizationUrl>http://www.summitsystemsinc.com</organizationUrl>
+            <roles></roles>
             <timezone>-6</timezone>
-        </contributor>
-    </contributors>
+        </developer>
+    </developers>
     <inceptionYear>2013</inceptionYear>
     <dependencyManagement>
         <dependencies>
@@ -108,6 +122,23 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.2</version>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.5.2</version>
+                <executions>
+                    <execution>
+                        <id>cobertura-aggregate-site</id>
+                        <phase>pre-site</phase>
+                        <goals>
+                            <goal>cobertura</goal>
+                        </goals>
+                        <configuration>
+                            <aggregate>true</aggregate>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
         <extensions>
             <extension>
@@ -132,4 +163,108 @@
         <module>SimpleQrExample</module>
         <module>SimpleQrExample-DLL</module>
     </modules>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.6</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>summary</report>
+                            <report>modules</report>
+                            <report>issue-tracking</report>
+                            <report>scm</report>
+                            <report>project-team</report>
+                            <report>distribution-management</report>
+                            <report>dependency-management</report>
+                            <report>plugin-management</report>
+                            <report>plugins</report>
+                            <report>license</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9</version>
+            </plugin>
+            <!--
+                Generates source cross-reference reports.  These are similar to
+                Javadoc, except the HTML includes hyperlinks on the classes and
+                method headers to view the source code.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.3</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>jxr</report>
+                            <report>test-jxr</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+                <configuration>
+                    <aggregate>true</aggregate>
+                </configuration>
+            </plugin>
+            <!--
+                PMD is a code quality tool.  The PMD report is a general code
+                quality report, while the CPD report identifies "copy-and-paste"
+                code blocks.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>2.7.1</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>pmd</report>
+                            <report>cpd</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+                <configuration>
+                    <aggregate>true</aggregate>
+                    <targetJdk>${jdk.version}</targetJdk>
+                </configuration>
+            </plugin>
+            <!--
+                Findbugs is a code quality tool.
+            -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.5.2</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>findbugs</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>${cobertura.version}</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>cobertura</report>
+                        </reports>
+                        <configuration>
+                            <aggregate>true</aggregate>
+                        </configuration>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
