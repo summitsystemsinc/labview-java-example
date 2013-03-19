@@ -21,20 +21,24 @@
             </head>
         <body class="topBarEnabled">
           
-                        
+                
                     
                 
 
     <div id="topbar" class="navbar navbar-fixed-top ">
       <div class="navbar-inner">
-                                  <div class="container"><div class="nav-collapse">
-            
+                <div class="container-fluid">
+        <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
                 
                                 <ul class="nav">
                             </ul>
           
           
-                                                              
+          
                    
                       </div>
           
@@ -42,7 +46,7 @@
       </div>
     </div>
     
-        <div class="container">
+        <div class="container-fluid">
           <div id="banner">
         <div class="pull-left">
                                 <div id="bannerLeft">
@@ -76,18 +80,42 @@
                             </ul>
       </div>
 
-      
+            
+      <div class="row-fluid">
+        <div id="leftColumn" class="span3">
+          <div class="well sidebar-nav">
                 
-        <div id="bodyColumn" >
+                    
+                <ul class="nav nav-list">
+  </ul>
+                
+                    
+                
+          <hr class="divider" />
+
+           <div id="poweredBy">
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                            <div class="clear"></div>
+                             <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+        <img class="builtBy" alt="Built by Maven" src="./images/logos/maven-feather.png" />
+      </a>
+                  </div>
+          </div>
+        </div>
+        
+                
+        <div id="bodyColumn"  class="span9" >
                                   
             <div class="section"><h2>Overview<a name="Overview"></a></h2><a name="Overview"></a><p>This project uses a Source Content Management System to manage its source code.</p></div><div class="section"><h2>Web Access<a name="Web_Access"></a></h2><a name="Web_Access"></a><p>The following is a link to the online source repository.</p><div class="source"><pre class="prettyprint"><a href="scm:git:git@github.com:summitsystemsinc/labview-java-example.git/commons-codec-dll">scm:git:git@github.com:summitsystemsinc/labview-java-example.git/commons-codec-dll</a></pre></div></div><div class="section"><h2>Anonymous access<a name="Anonymous_access"></a></h2><a name="Anonymous_access"></a><p>Refer to the documentation of the SCM used for more information about anonymously check out. The connection url is:</p><div class="source"><pre class="prettyprint">git:https://github.com/summitsystemsinc/labview-java-example.git/commons-codec-dll</pre></div></div><div class="section"><h2>Developer access<a name="Developer_access"></a></h2><a name="Developer_access"></a><p>Refer to the documentation of the SCM used for more information about developer check out. The connection url is:</p><div class="source"><pre class="prettyprint">git:git@github.com:summitsystemsinc/labview-java-example.git/commons-codec-dll</pre></div></div><div class="section"><h2>Access from behind a firewall<a name="Access_from_behind_a_firewall"></a></h2><a name="Access_from_behind_a_firewall"></a><p>Refer to the documentation of the SCM used for more information about access behind a firewall.</p></div>
                   </div>
+            </div>
           </div>
 
     <hr/>
 
     <footer>
-            <div class="container">
+            <div class="container-fluid">
               <div class="row span12">Copyright &copy;                    2013
                         <a href="http://www.summitsystemsinc.com">Summit Management Systems, Inc</a>.
             All Rights Reserved.      
@@ -96,11 +124,6 @@
             </div>
 
         
-                <p id="poweredBy" class="pull-right">
-                          <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
-        <img class="builtBy" alt="Built by Maven" src="./images/logos/maven-feather.png" />
-      </a>
-              </p>
         
                 </div>
     </footer>
