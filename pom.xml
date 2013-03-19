@@ -17,9 +17,20 @@
             <id>summitsystemsinc.com</id>
             <url>ftp://ftp.summitsystemsinc.com/projects/${project.artifactId}/${project.version}</url>
         </site>
+        <repository>
+            <id>summit-artifactory</id>
+            <name>Summit public artifactory</name>
+            <url>http://devel.summitsystemsinc.net/artifactory/public-releases-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>summit-artifactory</id>
+            <name>Summit public artifactory</name>
+            <url>http://devel.summitsystemsinc.net/artifactory/public-snapshots-local</url>
+        </snapshotRepository>
     </distributionManagement>
     <properties>
         <commons.codec.version>1.7</commons.codec.version>
+        <github.global.server>github</github.global.server>
     </properties>
     <contributors>
         <contributor>
