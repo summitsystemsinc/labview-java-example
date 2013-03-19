@@ -3,7 +3,9 @@ Example for using Java library with LabView
 
 Example of using java code within LabView.
 
-A full write up on how to accomplish this can be found at <http://www.summitsystemsinc.com/programming/java-with-labview>
+A full write up on how to accomplish this can be found at <http://www.summitsystemsinc.com/programming/java-with-labview>.
+
+Please see the project documentation at <http://summitsystemsinc.github.com/labview-java-example/>
 
 NOTES:
 - Project is built with Maven 3 from http://maven.apache.org/
