@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.summit.examples</groupId>
     <artifactId>labview-java-example</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>LabVIEW with Java Examples</name>
     <url>http://summitsystemsinc.github.com/labview-java-example</url>
