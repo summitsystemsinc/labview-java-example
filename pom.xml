@@ -7,6 +7,9 @@
     <packaging>pom</packaging>
     <name>LabView-Java Parent-${project.version}</name>
     <url>http://summitsystemsinc.github.com/labview-java-example</url>
+    <description>This project is an attempt to demonstrate cross-compatibilty with Java 
+        and LabVIEW from National Instruments.
+    </description>
     <scm>
         <developerConnection>scm:git:git@github.com:summitsystemsinc/labview-java-example.git</developerConnection>
         <connection>scm:git:https://github.com/summitsystemsinc/labview-java-example.git</connection>
