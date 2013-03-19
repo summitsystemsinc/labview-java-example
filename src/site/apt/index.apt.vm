@@ -11,4 +11,4 @@ About ${project.name}
     ${project.description}
 
     For a complete step-by-step guide on getting this setup to work, please
-    consult the article {{{Java with LabView}http://www.summitsystemsinc.com/programming/java-with-labview/}}.
+    consult the article {{{http://www.summitsystemsinc.com/programming/java-with-labview/?urlref=${project.url}}Java with LabView}}.
