@@ -10,7 +10,7 @@
     <custom>
         <fluidoSkin>
             <topBarEnabled>true</topBarEnabled>
-            <sideBarEnabled>false</sideBarEnabled>
+            <sideBarEnabled>true</sideBarEnabled>
         </fluidoSkin>
     </custom>
     <version position="right" />
@@ -19,7 +19,7 @@
         <breadcrumbs>
             <item name="${project.name}" href="/index.html" />
         </breadcrumbs>
-        <menu name="SFMF4J">
+        <menu name="LabVIEW Example">
             <item name="About" href="index.html" />
             <!--
             <item name="Howto" href="howto.html" />

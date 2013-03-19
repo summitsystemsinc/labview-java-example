@@ -1,0 +1,14 @@
+ -------------------------------------------------------------------------------
+                                  About
+ -------------------------------------------------------------------------------
+                      Summit Management Systems, Inc.
+ -------------------------------------------------------------------------------
+                                2013-03-04
+ -------------------------------------------------------------------------------
+
+About ${project.name}
+    
+    ${project.description}
+
+    For a complete step-by-step guide on getting this setup to work, please
+    consult the article {{{Java with LabView}http://www.summitsystemsinc.com/programming/java-with-labview/}}.
