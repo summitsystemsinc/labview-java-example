@@ -5,7 +5,7 @@
     <artifactId>labview-java-example</artifactId>
     <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>LabView-Java Parent-${project.version}</name>
+    <name>LabVIEW with Java Examples</name>
     <url>http://summitsystemsinc.github.com/labview-java-example</url>
     <description>This project is an attempt to demonstrate cross-compatibilty with Java 
         and LabVIEW from National Instruments.
