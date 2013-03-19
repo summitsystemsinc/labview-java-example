@@ -1,0 +1,26 @@
+-classpath
+'C:/Users/justin/Programs/GITClones/github/labview-java-example/target/classes;C:/Users/justin/Programs/GITClones/github/labview-java-example/target/test-classes;C:/Users/justin/Programs/GITClones/github/labview-java-example/commons-codec-dll/target/classes;C:/Users/justin/Programs/GITClones/github/labview-java-example/commons-codec-dll/target/test-classes;C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/target/classes;C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/target/test-classes;C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample-DLL/target/classes;C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample-DLL/target/test-classes;C:/Users/justin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;C:/Users/justin/.m2/repository/com/google/zxing/core/2.1/core-2.1.jar;C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/target/classes;C:/Users/justin/.m2/repository/com/google/zxing/javase/2.1/javase-2.1.jar;C:/Users/justin/.m2/repository/junit/junit/4.11/junit-4.11.jar;C:/Users/justin/.m2/repository/commons-codec/commons-codec/1.7/commons-codec-1.7.jar'
+-encoding
+'Cp1252'
+-protected
+-sourcepath
+'C:/Users/justin/Programs/GITClones/github/labview-java-example/SimpleQrExample/src/test/java'
+-author
+-bottom
+'Copyright &#169; 2013 <a href="http://www.summitsystemsinc.com">Summit Management Systems, Inc</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/justin/Programs/GITClones/github/labview-java-example/target/site/testapidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'LabView-Java Parent-1.1-SNAPSHOT 1.1-SNAPSHOT Test API'
+-link
+'../apidocs'
+-linkoffline
+'http://docs.oracle.com/javase/6/docs/api' 'C:/Users/justin/Programs/GITClones/github/labview-java-example/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'LabView-Java Parent-1.1-SNAPSHOT 1.1-SNAPSHOT Test API'
